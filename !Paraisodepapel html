@@ -1,0 +1,333 @@
+<!Paraisodepapel html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Paraiso de papel — Papelería creativa</title>
+  <meta name="description" content="Papelería creativa y decoración para pastel. Material para fiestas, bolsitas, kits, toppers y más." />
+  <meta name="theme-color" content="#ff6fb3">
+  <style>
+    :root{
+      --rosa:#ff6fb3; --rosa-suave:#ffd0e6; --texto:#2d2a2e; --blanco:#fff;
+      --dorado:#f6d36b; --rojo:#e11d48; --rojo-osc:#be123c; --borde:#ececec;
+    }
+    *{box-sizing:border-box} html,body{margin:0;padding:0}
+    body{
+      font-family: system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+      color:var(--texto);
+      background:
+        radial-gradient(1200px 500px at 50% -200px, #ffd6ea 20%, transparent 60%) no-repeat,
+        linear-gradient(180deg, var(--rosa-suave) 0%, #ffc0da 30%, #ffacd0 60%, var(--rosa) 100%);
+      min-height:100%;
+    }
+    .container{max-width:1100px;margin:0 auto;padding:0 16px}
+    header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.9);backdrop-filter:saturate(120%) blur(6px);border-bottom:1px solid rgba(0,0,0,.06)}
+    .row{display:flex;align-items:center;justify-content:space-between;gap:12px}
+    .brand{display:flex;align-items:center;gap:12px;padding:10px 0}
+    .brand img{width:52px;height:52px;object-fit:contain;border-radius:10px;background:#fff}
+    .title{font-weight:800;letter-spacing:.2px}
+    nav a{display:inline-block;margin-left:12px;padding:8px 10px;border-radius:999px;text-decoration:none;color:#111;font-weight:600;font-size:14px}
+    nav a.cta{background:var(--rojo);color:#fff;box-shadow:0 4px 12px rgba(225,29,72,.25)} nav a.cta:hover{background:var(--rojo-osc)}
+
+    .hero{text-align:center;padding:64px 16px 36px;color:#1f1b1f}
+    .hero h1{font-size:clamp(26px,6vw,46px);line-height:1.1;margin:0 0 10px}
+    .hero p{font-size:clamp(15px,3.5vw,18px);margin:0 auto 18px;max-width:720px}
+    .hero .btn{display:inline-block;padding:12px 18px;border-radius:999px;background:linear-gradient(180deg,#ff2e6f,var(--rojo));color:#fff;text-decoration:none;font-weight:800;letter-spacing:.3px;box-shadow:0 8px 22px rgba(225,29,72,.35)}
+    .note{text-align:center;max-width:800px;margin:14px auto 0;padding:8px 12px;color:#222;background:rgba(255,255,255,.85);border-radius:12px;border:1px solid rgba(0,0,0,.06)}
+    section{padding:44px 0}
+    h2{font-size:clamp(20px,4.5vw,32px);margin:0 0 16px;text-align:center}
+    h3{font-size:clamp(16px,4vw,22px);margin:22px 0 10px}
+    .grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fill,minmax(180px,1fr))}
+    .card{background:#fff;border-radius:14px;padding:12px;border:1px solid var(--borde);box-shadow:0 2px 10px rgba(0,0,0,.05)}
+    .img{height:150px;border-radius:10px;margin-bottom:10px;background:linear-gradient(180deg,#ffd7e9,#ffffff);display:flex;align-items:center;justify-content:center;color:#a01842;font-weight:700}
+    .meta{display:flex;align-items:center;justify-content:space-between;font-weight:600}
+    .price{color:#0a7d33}
+    .code{font-size:12px;color:#6b7280}
+    .card button{width:100%;margin-top:10px;padding:10px 12px;border:0;border-radius:10px;background:var(--rosa);color:#111;font-weight:700;cursor:pointer}
+    .form-wrap{max-width:720px;margin:0 auto;background:#fff;padding:16px;border-radius:16px;border:1px solid var(--borde);box-shadow:0 2px 10px rgba(0,0,0,.05)}
+    label{font-weight:600;font-size:14px}
+    input,textarea{width:100%;padding:10px 12px;margin-top:6px;margin-bottom:14px;border:1px solid #e5e7eb;border-radius:10px;font-size:14px;outline:none}
+    input:focus,textarea:focus{box-shadow:0 0 0 4px rgba(225,29,72,.15);border-color:#fca5b5}
+    .actions{display:flex;gap:10px;flex-wrap:wrap}
+    .btn-wsp{background:#25D366;color:#fff;border:0;padding:12px 16px;border-radius:10px;font-weight:700;cursor:pointer}
+    .btn-alt{background:#111;color:#fff;border:0;padding:12px 16px;border-radius:10px;font-weight:700;cursor:pointer}
+    footer{padding:28px 0;background:rgba(255,255,255,.9);text-align:center;font-size:14px}
+    .small{font-size:12px;color:#6b7280}
+
+/* Forzar que la tarjeta sea vertical y sin superposición */
+#catalogo .card{
+  display: flex;
+  flex-direction: column;
+}
+
+#catalogo .card .img{
+  padding: 0;
+  background: none;
+  /* evita centrar contenido que empuje a otros elementos */
+  display: block;
+  height: auto;
+}
+
+#catalogo .card .img > img{
+  width: 100%;
+  height: auto;   /* la foto define su altura */
+  display: block; /* quita espacios fantasma debajo de img */
+  border-radius: 10px;
+}
+
+#catalogo .card .meta{
+  position: static;              /* por si quedó absoluto en otro lado */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+
+  </style>
+</head>
+<body>
+
+  <!-- ====== CABECERA ====== -->
+  <header aria-label="Cabecera del sitio">
+    <div class="container row">
+      <div class="brand">
+        <!-- Guarda tu logo junto a este archivo como: logo-paraiso.png -->
+        <img src="logo-paraiso.png" alt="Paraiso de papel — Papelería creativa" />
+        <div>
+          <div class="title">Paraiso de papel</div>
+          <div style="font-size:12px;color:#6b7280">Papelería creativa · Decoración para pastel</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#catalogo">Catálogo</a>
+        <a href="#pedidos">Pedidos</a>
+        <a href="#nosotros">Nosotros</a>
+        <a class="cta" href="#catalogo">Álbum Navideño</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ====== HERO ====== -->
+  <section class="hero" id="inicio">
+    <div class="container">
+      <h1>¡Merry Christmas! 🎄🎁</h1>
+      <p>Material para decoración de fiestas: bolsitas, toppers, kits temáticos y más. 
+         Para pedir, indica <strong>cantidad</strong> y <strong>código (según imagen)</strong>.</p>
+      <a class="btn" href="#catalogo" aria-label="Ir al catálogo">VER ÁLBUM NAVIDEÑO</a>
+      <div class="note">WhatsApp / correo / redes sociales: <strong>pendiente</strong> (los agregamos después).</div>
+    </div>
+  </section>
+
+  <!-- ====== CATÁLOGO (orden del PDF) ====== -->
+  <section id="catalogo" aria-labelledby="titulo-catalogo">
+    <div class="container">
+      <h2 id="titulo-catalogo">Catálogo — Temporada Navideña</h2>
+
+<!-- 1) Kit de renos -->
+<h3>Kit de renos</h3>
+<div class="grid">
+  <article class="card">
+    <div class="img" role="img" aria-label="Kit de renos">
+      <img src="Reno.jpg" alt="Kit de renos">
+    </div> <!-- 👈 AQUÍ SE CIERRA .img -->
+
+    <div class="meta">
+      <span class="price">$120</span>
+      <span class="code">Código: R002</span>
+    </div>
+
+    <button data-code="R002">Agregar al pedido</button>
+  </article>
+</div>
+
+      <!-- 2) Kit metálico -->
+      <h3>Kit metálico</h3>
+      <div class="grid">
+        <article class="card">
+          <div class="img" role="img" aria-label="Kit metálico">Imagen</div>
+          <div class="meta">
+            <span class="price"></span>
+            <span class="code">Código: ver imagen</span>
+          </div>
+          <button data-code="KIT-METALICO">Agregar al pedido</button>
+        </article>
+      </div>
+
+      <!-- 3) Kit impresión -->
+      <h3>Kit impresión</h3>
+      <div class="grid">
+        <article class="card">
+          <div class="img" role="img" aria-label="Kit impresión">Imagen</div>
+          <div class="meta">
+            <span class="price"></span>
+            <span class="code">Código: ver imagen</span>
+          </div>
+          <button data-code="KIT-IMPRESION">Agregar al pedido</button>
+        </article>
+      </div>
+
+      <!-- 4) Cake topper 4D con luz integrada (edición especial Stitch navideño) -->
+      <h3>Cake topper en 4D con luz integrada — edición especial Stitch navideño</h3>
+      <div class="grid">
+        <article class="card">
+          <div class="img" role="img" aria-label="Cake topper 4D con luz integrada">Imagen</div>
+          <div class="meta">
+            <span class="price"></span>
+            <span class="code">Código: ver imagen</span>
+          </div>
+          <button data-code="TOPPER-4D-STITCH">Agregar al pedido</button>
+        </article>
+      </div>
+
+      <!-- 5) Cake topper metalizados individual -->
+      <h3>Cake topper metalizados individual</h3>
+      <div class="grid">
+        <article class="card">
+          <div class="img" role="img" aria-label="Cake topper metalizado individual">Imagen</div>
+          <div class="meta">
+            <span class="price"></span>
+            <span class="code">Código: ver imagen</span>
+          </div>
+          <button data-code="TOPPER-METALICO">Agregar al pedido</button>
+        </article>
+      </div>
+
+      <!-- 6) Cake topper tipo oblea falsa -->
+      <h3>Cake topper tipo oblea falsa</h3>
+      <div class="grid">
+        <article class="card">
+          <div class="img" role="img" aria-label="Cake topper tipo oblea falsa">Imagen</div>
+          <div class="meta">
+            <span class="price"></span>
+            <span class="code">Código: ver imagen</span>
+          </div>
+          <button data-code="TOPPER-OBLEA-FALSA">Agregar al pedido</button>
+        </article>
+      </div>
+
+      <!-- 7) Mini cake topper (paquete de 10 pz, plastificado por atrás) -->
+      <h3>Mini cake topper (paquete de 10 pz, plastificado por la parte de atrás)</h3>
+      <div class="grid">
+        <article class="card">
+          <div class="img" role="img" aria-label="Mini cake topper paquete 10 pz">Imagen</div>
+          <div class="meta">
+            <span class="price"></span>
+            <span class="code">Código: ver imagen</span>
+          </div>
+          <button data-code="MINI-TOPPER-10">Agregar al pedido</button>
+        </article>
+      </div>
+
+      <!-- 8) Paquete de 15 pz de copos -->
+      <h3>Paquete de 15 pz de copos</h3>
+      <div class="grid">
+        <article class="card">
+          <div class="img" role="img" aria-label="Paquete de 15 pz de copos">Imagen</div>
+          <div class="meta">
+            <span class="price"></span>
+            <span class="code">Código: ver imagen</span>
+          </div>
+          <button data-code="COPOS-15">Agregar al pedido</button>
+        </article>
+      </div>
+
+      <!-- 9) Figuras navideñas para cupcakes (impresión y metálicos) -->
+      <h3>Paquete de figuras navideñas para cupcakes (impresión y metálicos)</h3>
+      <div class="grid">
+        <article class="card">
+          <div class="img" role="img" aria-label="Figuras navideñas para cupcakes">Imagen</div>
+          <div class="meta">
+            <span class="price"></span>
+            <span class="code">Código: ver imagen</span>
+          </div>
+          <button data-code="CUPCAKES-FIGURAS">Agregar al pedido</button>
+        </article>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ====== PEDIDOS ====== -->
+  <section id="pedidos" aria-labelledby="titulo-pedidos">
+    <div class="container">
+      <h2 id="titulo-pedidos">Haz tu pedido</h2>
+      <form class="form-wrap" id="formPedido">
+        <!-- WhatsApp pendiente (no llenar aún) -->
+        <input type="hidden" id="wspNumber" value="">
+        <label for="nombre">Nombre</label>
+        <input id="nombre" name="nombre" type="text" placeholder="Tu nombre" required>
+
+        <label for="telefono">WhatsApp</label>
+        <input id="telefono" name="telefono" type="tel" placeholder="Ej. 55 1234 5678" required>
+
+        <label for="codigo">Código o producto</label>
+        <input id="codigo" name="codigo" type="text" placeholder="Ej. KIT-RENOS o código de la imagen" required>
+
+        <label for="cantidad">Cantidad</label>
+        <input id="cantidad" name="cantidad" type="number" min="1" value="1" required>
+
+        <label for="comentarios">Comentarios (opcional)</label>
+        <textarea id="comentarios" name="comentarios" rows="3" placeholder="Tamaño, color, fecha del evento..."></textarea>
+
+        <div class="actions">
+          <button type="submit" class="btn-wsp">Enviar por WhatsApp (pendiente)</button>
+          <button type="button" class="btn-alt" id="btnCorreo">Enviar por correo (pendiente)</button>
+        </div>
+        <p class="small">Al enviar aceptas nuestro manejo de datos para contactarte sobre tu pedido.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ====== NOSOTROS / PIE ====== -->
+  <section id="nosotros" aria-labelledby="titulo-nosotros">
+    <div class="container">
+      <h2 id="titulo-nosotros">Nosotros</h2>
+      <p style="text-align:center;max-width:800px;margin:0 auto">
+        Somos <strong>Paraiso de papel</strong> en Tampico, Tamaulipas. Papelería creativa y
+        <strong>decoración para pastel</strong> y fiestas. Trabajamos por encargo y cuidamos cada detalle.
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <!-- Redes sociales y correo: PENDIENTE -->
+      <div>📍 Envíos locales | 📞 <strong>Pendiente</strong> | 📸 <a href="#" rel="noopener">Instagram (pendiente)</a> · <a href="#" rel="noopener">Facebook (pendiente)</a></div>
+      <div class="small">© <span id="anio"></span> Paraiso de papel — Todos los derechos reservados.</div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('anio').textContent = new Date().getFullYear();
+    // Rellenar automáticamente el campo "Código o producto" al pulsar una tarjeta
+    document.querySelectorAll('[data-code]').forEach(function(btn){
+      btn.addEventListener('click', function(){
+        var code = this.getAttribute('data-code');
+        document.getElementById('codigo').value = code;
+        window.location.hash = '#pedidos';
+        document.getElementById('cantidad').focus();
+      });
+    });
+
+    // WhatsApp (pendiente): cuando nos des el número, activamos esta parte
+    document.getElementById('formPedido').addEventListener('submit', function(e){
+      e.preventDefault();
+      var wsp  = document.getElementById('wspNumber').value.trim();
+      if(!wsp){ alert('El envío por WhatsApp quedará activo cuando agreguemos el número.'); return; }
+      var nombre = encodeURIComponent(document.getElementById('nombre').value.trim());
+      var tel    = encodeURIComponent(document.getElementById('telefono').value.trim());
+      var codigo = encodeURIComponent(document.getElementById('codigo').value.trim());
+      var cant   = encodeURIComponent(document.getElementById('cantidad').value.trim());
+      var com    = encodeURIComponent(document.getElementById('comentarios').value.trim());
+      var texto = `Hola, soy ${nombre}. Quiero pedir ${cant} pieza(s) del ${codigo}. Mi WhatsApp: ${tel}. ${com ? 'Comentarios: '+com : ''}`;
+      var url = `https://wa.me/${wsp}?text=${texto}`; window.open(url, '_blank');
+    });
+
+    // Correo (pendiente): cuando nos des el email, lo activamos
+    document.getElementById('btnCorreo').addEventListener('click', function(){
+      alert('El envío por correo quedará activo cuando agreguemos el email.');
+    });
+  </script>
+</body>
+</html>

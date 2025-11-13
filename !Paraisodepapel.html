@@ -1,0 +1,1260 @@
+<!Paraisodepapel html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Paraiso de papel — Papelería creativa</title>
+  <meta name="description" content="Papelería creativa y decoración para pastel. Material para fiestas, bolsitas, kits, toppers y más." />
+  <meta name="theme-color" content="#ff6fb3">
+  <style>
+    :root{
+      --rosa:#ff6fb3; --rosa-suave:#ffd0e6; --texto:#2d2a2e; --blanco:#fff;
+      --dorado:#f6d36b; --rojo:#e11d48; --rojo-osc:#be123c; --borde:#ececec;
+    }
+    *{box-sizing:border-box} html,body{margin:0;padding:0}
+    body{
+      font-family: system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+      color:var(--texto);
+      background:
+        radial-gradient(1200px 500px at 50% -200px, #ffd6ea 20%, transparent 60%) no-repeat,
+        linear-gradient(180deg, var(--rosa-suave) 0%, #ffc0da 30%, #ffacd0 60%, var(--rosa) 100%);
+      min-height:100%;
+    }
+    .container{max-width:1100px;margin:0 auto;padding:0 16px}
+    header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.9);backdrop-filter:saturate(120%) blur(6px);border-bottom:1px solid rgba(0,0,0,.06)}
+/* Asegurar que las tarjetas sean del mismo tamaño y disposición */
+.grid {
+  display: grid;
+  gap: 16px;  /* Espacio entre las tarjetas */
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); /* Se ajusta para pantallas grandes y pequeñas */
+  padding: 0 16px; /* Añade espacio a los lados */
+}
+
+.card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 12px;
+  border: 1px solid var(--borde);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, .05);
+  margin: 0 8px; /* Espacio entre las tarjetas */
+}
+
+.card .img {
+  height: 150px; /* Tamaño uniforme para todas las imágenes */
+  border-radius: 10px;
+  margin-bottom: 10px;
+  background: linear-gradient(180deg, #ffd7e9, #ffffff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #a01842;
+  font-weight: 700;
+}
+
+.card .img img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
+
+.card .meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 600;
+}
+
+.card .price {
+  color: #0a7d33;
+}
+
+.card .code {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.card button {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px 12px;
+  border: 0;
+  border-radius: 10px;
+  background: var(--rosa);
+  color: #111;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.card button:hover {
+  background: var(--rojo);
+}
+    .row{display:flex;align-items:center;justify-content:space-between;gap:12px}
+    .brand{display:flex;align-items:center;gap:12px;padding:10px 0}
+    .brand img{width:52px;height:52px;object-fit:contain;border-radius:10px;background:#fff}
+    .title{font-weight:800;letter-spacing:.2px}
+    nav a{display:inline-block;margin-left:12px;padding:8px 10px;border-radius:999px;text-decoration:none;color:#111;font-weight:600;font-size:14px}
+    nav a.cta{background:var(--rojo);color:#fff;box-shadow:0 4px 12px rgba(225,29,72,.25)} nav a.cta:hover{background:var(--rojo-osc)}
+
+    .hero{text-align:center;padding:64px 16px 36px;color:#1f1b1f}
+    .hero h1{font-size:clamp(26px,6vw,46px);line-height:1.1;margin:0 0 10px}
+    .hero p{font-size:clamp(15px,3.5vw,18px);margin:0 auto 18px;max-width:720px}
+    .hero .btn{display:inline-block;padding:12px 18px;border-radius:999px;background:linear-gradient(180deg,#ff2e6f,var(--rojo));color:#fff;text-decoration:none;font-weight:800;letter-spacing:.3px;box-shadow:0 8px 22px rgba(225,29,72,.35)}
+    .note{text-align:center;max-width:800px;margin:14px auto 0;padding:8px 12px;color:#222;background:rgba(255,255,255,.85);border-radius:12px;border:1px solid rgba(0,0,0,.06)}
+    section{padding:44px 0}
+    h2{font-size:clamp(20px,4.5vw,32px);margin:0 0 16px;text-align:center}
+    h3{font-size:clamp(16px,4vw,22px);margin:22px 0 10px}
+    .grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fill,minmax(180px,1fr))}
+    .card{background:#fff;border-radius:14px;padding:12px;border:1px solid var(--borde);box-shadow:0 2px 10px rgba(0,0,0,.05)}
+    .img{height:150px;border-radius:10px;margin-bottom:10px;background:linear-gradient(180deg,#ffd7e9,#ffffff);display:flex;align-items:center;justify-content:center;color:#a01842;font-weight:700}
+    .meta{display:flex;align-items:center;justify-content:space-between;font-weight:600}
+    .price{color:#0a7d33}
+    .code{font-size:12px;color:#6b7280}
+    .card button{width:100%;margin-top:10px;padding:10px 12px;border:0;border-radius:10px;background:var(--rosa);color:#111;font-weight:700;cursor:pointer}
+    .form-wrap{max-width:720px;margin:0 auto;background:#fff;padding:16px;border-radius:16px;border:1px solid var(--borde);box-shadow:0 2px 10px rgba(0,0,0,.05)}
+    label{font-weight:600;font-size:14px}
+    input,textarea{width:100%;padding:10px 12px;margin-top:6px;margin-bottom:14px;border:1px solid #e5e7eb;border-radius:10px;font-size:14px;outline:none}
+    input:focus,textarea:focus{box-shadow:0 0 0 4px rgba(225,29,72,.15);border-color:#fca5b5}
+    .actions{display:flex;gap:10px;flex-wrap:wrap}
+    .btn-wsp{background:#25D366;color:#fff;border:0;padding:12px 16px;border-radius:10px;font-weight:700;cursor:pointer}
+    .btn-alt{background:#111;color:#fff;border:0;padding:12px 16px;border-radius:10px;font-weight:700;cursor:pointer}
+    footer{padding:28px 0;background:rgba(255,255,255,.9);text-align:center;font-size:14px}
+    .small{font-size:12px;color:#6b7280}
+
+/* Forzar que la tarjeta sea vertical y sin superposición */
+#catalogo .card{
+  display: flex;
+  flex-direction: column;
+}
+
+#catalogo .card .img{
+  padding: 0;
+  background: none;
+  /* evita centrar contenido que empuje a otros elementos */
+  display: block;
+  height: auto;
+}
+
+#catalogo .card .img > img{
+  width: 100%;
+  height: auto;   /* la foto define su altura */
+  display: block; /* quita espacios fantasma debajo de img */
+  border-radius: 10px;
+}
+
+#catalogo .card .meta{
+  position: static;              /* por si quedó absoluto en otro lado */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+/* 🎄 Sección Nosotros decorada */
+.nosotros {
+  background: linear-gradient(to bottom, #ff8ccf, #ffa7d7);
+  position: relative;
+  padding: 60px 20px;
+  text-align: center;
+  border-top: 6px solid #ff66b3;
+  border-bottom: 6px solid #ff66b3;
+  color: #2e2e2e;
+  font-size: 1.2em;
+  overflow: hidden;
+}
+
+/* ❄️❄️ EFECTO DE NIEVE ALEATORIA EN LA SECCIÓN "NOSOTROS" ❄️❄️ */
+.nosotros {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Contenedor invisible para los copos */
+.nosotros .snow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+/* Copos individuales */
+.nosotros .flake {
+  position: absolute;
+  top: -10px;
+  color: white;
+  opacity: 0.8;
+  font-size: 1.2rem;
+  animation: fall linear infinite;
+}
+
+/* Animación de caída */
+@keyframes fall {
+  0% {
+    transform: translateY(-10px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(110vh);
+    opacity: 0;
+  }
+}}
+
+@keyframes snow {
+  0% { transform: translateY(0); opacity: 0.4; }
+  100% { transform: translateY(100vh); opacity: 0; }
+}
+
+/* 🌟 Título con brillo */
+.nosotros h2 {
+  font-size: 2.8rem;
+  color: #b30059;
+  text-shadow: 2px 2px 6px rgba(255, 255, 255, 0.7);
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.nosotros h2::after {
+  content: "";
+  position: absolute;
+  right: 10px;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+/* 🎀 Texto decorado */
+.nosotros p strong {
+  color: #e60073;
+  font-weight: 700;
+}
+
+
+/* 🖼️ Modal para ver imágenes grandes */
+.modal-img {
+  display: none; 
+  position: fixed;
+  z-index: 9999;
+  inset: 0;
+  background: rgba(0,0,0,.8);
+  backdrop-filter: blur(4px);
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.modal-img img {
+  max-width: 90%;
+  max-height: 90vh;
+  border-radius: 14px;
+  box-shadow: 0 0 20px rgba(255,255,255,0.4);
+  animation: zoomIn .3s ease;
+}
+
+@keyframes zoomIn {
+  from { transform: scale(0.7); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+/* Cerrar modal */
+.modal-close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 3rem;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* 🎄 HERO NAVIDEÑO DECORADO */
+.navidad-hero {
+  background: linear-gradient(to bottom, #ffb3d9, #ff9ac8);
+  padding: 80px 20px 120px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* ❄ Nieve animada — muchos copos cayendo aleatoriamente */
+.navidad-hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background-image: url('https://i.imgur.com/Po9n7yM.png'); /* imagen de copos */
+  opacity: 0.5;
+  animation: snowFall 12s linear infinite;
+}
+
+@keyframes snowFall {
+  0% { background-position: 0 -200px; }
+  100% { background-position: 0 600px; }
+}
+
+/* 🎅 Emoji navideños animados */
+.navidad-hero .emoji {
+  display: inline-block;
+  animation: bounce 1.8s infinite ease-in-out;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0);}
+  50% { transform: translateY(-6px);}
+}
+
+/* ✨ Destellos por toda la página */
+.sparkle-container {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 5;
+  overflow: hidden;
+}
+
+/* Destello individual */
+.sparkle {
+  position: absolute;
+  color: #ffd700; /* Dorado */
+  font-size: 20px;
+  opacity: 0;
+  animation: sparkle 1.4s ease-out forwards;
+  filter: drop-shadow(0 0 6px #ffd700);
+}
+
+/* Animación del destello */
+@keyframes sparkle {
+  0% {
+    opacity: 0;
+    transform: scale(0.4);
+  }
+  30% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  70% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+}
+
+/* 🎆 Contenedor general de explosiones */
+.fireworks-container {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 10;
+  overflow: hidden;
+}
+
+/* Una explosión completa */
+.explosion {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  pointer-events: none;
+}
+
+/* Cada chispa */
+.spark {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background: radial-gradient(circle, #ffd700, #ff9900);
+  border-radius: 50%;
+  opacity: 0;
+  transform: scale(0.3);
+  animation: spark-explode 800ms ease-out forwards;
+  filter: drop-shadow(0 0 8px #ffd700);
+}
+
+/* Animación de cada chispa */
+@keyframes spark-explode {
+  0% {
+    opacity: 1;
+    transform: scale(1) translate(0, 0);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.4) translate(var(--x), var(--y));
+  }
+}
+
+
+  </style>
+</head>
+<body>
+<div class="sparkle-container"></div>
+<div class="fireworks-container"></div>
+
+  <!-- ====== CABECERA ====== -->
+<header aria-label="Cabecera del sitio">
+  <div class="container row">
+    <div class="brand">
+      <!-- Aquí estamos agregando la imagen del logo -->
+      <div class="logo">
+        <img src="Logoparaiso.png" alt="Logo de Paraíso de Pepé" style="width:80px; height:auto;">
+      </div>
+      <div>
+        <div class="title">Paraiso de papel</div>
+        <div style="font-size:12px;color:#6b7280">Papelería creativa · Decoración </div>
+      </div>
+    </div>
+    <nav>
+      <a href="#catalogo">Catálogo</a>
+      <a href="#nosotros">Nosotros</a>
+      <a class="cta" href="#catalogo">Álbum Navideño</a>
+    </nav>
+  </div>
+
+</header>
+
+  <!-- ====== HERO ====== -->
+  <section class="hero" id="inicio">
+    <div class="container">
+      <h1>¡Merry Christmas! 🎄🎁</h1>
+      <p>Material para decoración de fiestas: bolsitas, toppers, kits temáticos y más.</p>
+<a class="btn" href="https://www.facebook.com/paraisode.papel.5895?locale=es_LA" 
+   target="_blank" 
+   rel="noopener noreferrer" 
+   aria-label="Abrir Facebook de Paraiso de Papel">
+  VISITAR FACEBOOK
+</a>
+
+      <div class="note">
+WhatsApp:<strong> 833-100-8211</strong>/ Instagram: <strong>paraiso_2019_depapel</strong>.
+</div>
+</div>
+</div>
+  </section>
+
+  <!-- ====== CATÁLOGO (orden del PDF) ====== -->
+  <section id="catalogo" aria-labelledby="titulo-catalogo">
+    <div class="container">
+      <h2 id="titulo-catalogo">Catálogo — Temporada Navideña</h2>
+
+<!-- 1) Kit de renos -->
+<h3>Kit de renos</h3>
+<div class="grid">
+  <article class="card">
+    <div class="img" role="img" aria-label="Kit de renos">
+      <img src="Renoo.jpg" alt="Kit de renos">
+    </div> <!-- 👈 AQUÍ SE CIERRA .img -->
+
+    <div class="meta">
+      <span class="price">Estilo 1</span>
+      <span class="code">Código: R001</span>
+    </div>
+
+
+  </article>
+
+  <article class="card">
+    <div class="img" role="img" aria-label="Kit de renos versión 2">
+      <img src="Reno.jpg" alt="Kit de renos 2" style="width:100%;height:auto;border-radius:10px;display:block;">
+    </div>
+    <div class="meta">
+      <span class="price">Estilo 2</span>
+      <span class="code">Código: R002</span>
+    </div>
+  </article>
+</div>
+
+</div>
+
+
+
+ <!-- 2) Kit metálico -->
+<h3>Kit metálico</h3>
+<div class="grid">
+  <!-- Producto 1 -->
+  <article class="card">
+    <div class="img" role="img" aria-label="Kit metálico 1">
+      <img src="Kitmetalico.jpeg" alt="Kit metálico 1">
+    </div>
+    <div class="meta">
+      <span class="price">Estilo 1</span>
+      <span class="code">Código: M001</span>
+    </div>
+  </article>
+
+  <!-- Producto 2 -->
+  <article class="card">
+    <div class="img" role="img" aria-label="Kit metálico 2">
+      <img src="Kitmetalico2.jpeg" alt="Kit metálico 2">
+    </div>
+    <div class="meta">
+      <span class="price">Estilo 2</span>
+      <span class="code">Código: M002</span>
+    </div>
+  </article>
+
+  <!-- Producto 3 -->
+  <article class="card">
+    <div class="img" role="img" aria-label="Kit metálico 3">
+      <img src="Kitmetalico3.jpeg" alt="Kit metálico 3">
+    </div>
+    <div class="meta">
+      <span class="price">Estilo 3</span>
+      <span class="code">Código: M003</span>
+    </div>
+  </article>
+
+  <!-- Producto 4 -->
+  <article class="card">
+    <div class="img" role="img" aria-label="Kit metálico 4">
+      <img src="Kitmetalico4.jpeg" alt="Kit metálico 4">
+    </div>
+    <div class="meta">
+      <span class="price">Estilo 4</span>
+      <span class="code">Código: M004</span>
+    </div>
+  </article>
+
+  <!-- Producto 5 -->
+  <article class="card">
+    <div class="img" role="img" aria-label="Kit metálico 5">
+      <img src="Kitmetalico5.jpeg" alt="Kit metálico 5">
+    </div>
+    <div class="meta">
+      <span class="price">Estilo 5</span>
+      <span class="code">Código: M005</span>
+    </div>
+  </article>
+
+  <!-- Producto 6 -->
+  <article class="card">
+    <div class="img" role="img" aria-label="Kit metálico 6">
+      <img src="Kitmetalico6.jpeg" alt="Kit metálico 6">
+    </div>
+    <div class="meta">
+      <span class="price">Estilo 6</span>
+      <span class="code">Código: M006</span>
+    </div>
+  </article>
+
+  <!-- Producto 7 -->
+  <article class="card">
+    <div class="img" role="img" aria-label="Kit metálico 7">
+      <img src="Kitmetalico7.jpeg" alt="Kit metálico 7">
+    </div>
+    <div class="meta">
+      <span class="price">Estilo 7</span>
+      <span class="code">Código: M007</span>
+    </div>
+  </article>
+</div>
+
+<!-- 3) Kit impresión -->
+<h3>Kit impresión</h3>
+<div class="grid">
+  <!-- Producto 1 -->
+  <article class="card">
+    <div class="img" role="img" aria-label="Kit impresión 1">
+      <img src="Kitimpresion2.jpeg" alt="Kit impresión 1">
+    </div>
+    <div class="meta">
+      <span class="price">Estilo 1</span>
+      <span class="code">Código: I001</span>
+    </div>
+  </article>
+
+  <!-- Producto 2 -->
+  <article class="card">
+    <div class="img" role="img" aria-label="Kit impresión 2">
+      <img src="Kitimpresion.jpeg" alt="Kit impresión 2">
+    </div>
+    <div class="meta">
+      <span class="price">Estilo 2</span>
+      <span class="code">Código: I002</span>
+    </div>
+  </article>
+
+  <!-- Producto 3 -->
+  <article class="card">
+    <div class="img" role="img" aria-label="Kit impresión 3">
+      <img src="Kitimpresion3.jpeg" alt="Kit impresión 3">
+    </div>
+    <div class="meta">
+      <span class="price">Estilo 3</span>
+      <span class="code">Código: I003</span>
+    </div>
+  </article>
+
+  <!-- Producto 4 -->
+  <article class="card">
+    <div class="img" role="img" aria-label="Kit impresión 4">
+      <img src="Kitimpresion4.jpeg" alt="Kit impresión 4">
+    </div>
+    <div class="meta">
+      <span class="price">Estilo 4</span>
+      <span class="code">Código: I004</span>
+    </div>
+  </article>
+
+  <!-- Producto 5 -->
+  <article class="card">
+    <div class="img" role="img" aria-label="Kit impresión 5">
+      <img src="Kitimpresion5.jpeg" alt="Kit impresión 5">
+    </div>
+    <div class="meta">
+      <span class="price">Estilo 5</span>
+      <span class="code">Código: I005</span>
+    </div>
+  </article>
+
+  <!-- Producto 6 -->
+  <article class="card">
+    <div class="img" role="img" aria-label="Kit impresión 6">
+      <img src="Kitimpresion6.jpeg" alt="Kit impresión 6">
+    </div>
+    <div class="meta">
+      <span class="price">Estilo 6</span>
+      <span class="code">Código: I006</span>
+    </div>
+  </article>
+
+  <!-- Producto 7 -->
+  <article class="card">
+    <div class="img" role="img" aria-label="Kit impresión 7">
+      <img src="Kitimpresion7.jpeg" alt="Kit impresión 7">
+    </div>
+    <div class="meta">
+      <span class="price">Estilo 7</span>
+      <span class="code">Código: I007</span>
+    </div>
+  </article>
+</div>
+
+
+<!-- 4) Cake topper en 4D con luz integrada -->
+<h3>Cake topper en 4D con luz integrada — edición especial Stitch navideño</h3>
+<div class="grid">
+  <!-- Producto 1 -->
+  <article class="card">
+    <div class="img" role="img" aria-label="Cake topper 4D con luz integrada 1">
+      <img src="Lucesled.jpeg" alt="Cake topper 4D con luz integrada 1">
+    </div>
+    <div class="meta">
+      <span class="price">Estilo 1</span>
+      <span class="code">Código: 4D 1</span>
+    </div>
+  </article>
+
+  <!-- Producto 2 -->
+  <article class="card">
+    <div class="img" role="img" aria-label="Cake topper 4D con luz integrada 2">
+      <img src="Lucesled3.jpeg" alt="Cake topper 4D con luz integrada 2">
+    </div>
+    <div class="meta">
+      <span class="price">Estilo 2</span>
+      <span class="code">Código: 4D 2</span>
+    </div>
+  </article>
+
+  <!-- Producto 3 -->
+  <article class="card">
+    <div class="img" role="img" aria-label="Cake topper 4D con luz integrada 3">
+      <img src="Lucesled2.jpeg" alt="Cake topper 4D con luz integrada 3">
+    </div>
+    <div class="meta">
+      <span class="price">Estilo 3</span>
+      <span class="code">Código: 4D 3</span>
+    </div>
+  </article>
+
+  <!-- Producto 4 -->
+  <article class="card">
+    <div class="img" role="img" aria-label="Cake topper 4D con luz integrada 4">
+      <img src="Lucesled4.jpeg" alt="Cake topper 4D con luz integrada 4">
+    </div>
+    <div class="meta">
+      <span class="price">Estilo 4</span>
+      <span class="code">Código: 4D 4</span>
+    </div>
+  </article>
+</div>
+
+<!-- 5) Cake topper metalizados individual -->
+<h3>Cake topper metalizados individual</h3>
+<div class="grid">
+  <!-- Producto 1 -->
+  <article class="card">
+    <div class="img" role="img" aria-label="Cake topper metalizado individual 1">
+      <img src="Metalizadoind5.jpeg" alt="Cake topper metalizado individual 1">
+    </div>
+    <div class="meta">
+      <span class="price">Estilo 1</span>
+      <span class="code">Código: MET 1</span>
+    </div>
+  </article>
+
+  <!-- Producto 2 -->
+  <article class="card">
+    <div class="img" role="img" aria-label="Cake topper metalizado individual 2">
+      <img src="Metalizadoind.jpeg" alt="Cake topper metalizado individual 2">
+    </div>
+    <div class="meta">
+      <span class="price">Estilo 2</span>
+      <span class="code">Código: MET 2</span>
+    </div>
+  </article>
+
+  <!-- Producto 3 -->
+  <article class="card">
+    <div class="img" role="img" aria-label="Cake topper metalizado individual 3">
+      <img src="Metalizadoind2.jpeg" alt="Cake topper metalizado individual 3">
+    </div>
+    <div class="meta">
+      <span class="price">Estilo 3</span>
+      <span class="code">Código: MET 3</span>
+    </div>
+  </article>
+
+  <!-- Producto 4 -->
+  <article class="card">
+    <div class="img" role="img" aria-label="Cake topper metalizado individual 4">
+      <img src="Metalizadoind6.jpeg" alt="Cake topper metalizado individual 4">
+    </div>
+    <div class="meta">
+      <span class="price">Estilo 4</span>
+      <span class="code">Código: MET 4</span>
+    </div>
+  </article>
+
+  <!-- Producto 5 -->
+  <article class="card">
+    <div class="img" role="img" aria-label="Cake topper metalizado individual 5">
+      <img src="Metalizadoind3.jpeg" alt="Cake topper metalizado individual 5">
+    </div>
+    <div class="meta">
+      <span class="price">Estilo 5</span>
+      <span class="code">Código: MET 5</span>
+    </div>
+  </article>
+
+  <!-- Producto 6 -->
+  <article class="card">
+    <div class="img" role="img" aria-label="Cake topper metalizado individual 6">
+      <img src="Metalizadoind4.jpeg" alt="Cake topper metalizado individual 6">
+    </div>
+    <div class="meta">
+      <span class="price">Estilo 6</span>
+      <span class="code">Código: MET 6</span>
+    </div>
+  </article>
+</div>
+
+<!-- 6) Cake topper tipo oblea falsa -->
+<h3>Cake topper tipo oblea falsa</h3>
+<div class="grid">
+  <!-- Producto 1 -->
+  <article class="card">
+    <div class="img" role="img" aria-label="Cake topper tipo oblea falsa 1">
+      <img src="Oblea2.jpeg" alt="Cake topper tipo oblea falsa 1">
+    </div>
+    <div class="meta">
+      <span class="price">Estilo 1</span>
+      <span class="code">Código: OFR 1</span>
+    </div>
+  </article>
+
+  <!-- Producto 2 -->
+  <article class="card">
+    <div class="img" role="img" aria-label="Cake topper tipo oblea falsa 2">
+      <img src="Oblea3.jpeg" alt="Cake topper tipo oblea falsa 2">
+    </div>
+    <div class="meta">
+      <span class="price">Estilo 2</span>
+      <span class="code">Código: OFR 2</span>
+    </div>
+  </article>
+
+  <!-- Producto 3 -->
+  <article class="card">
+    <div class="img" role="img" aria-label="Cake topper tipo oblea falsa 3">
+      <img src="Oblea5.jpeg" alt="Cake topper tipo oblea falsa 3">
+    </div>
+    <div class="meta">
+      <span class="price">Estilo 3</span>
+      <span class="code">Código: OFN 3</span>
+    </div>
+  </article>
+
+  <!-- Producto 4 -->
+  <article class="card">
+    <div class="img" role="img" aria-label="Cake topper tipo oblea falsa 4">
+      <img src="Oblea4.jpeg" alt="Cake topper tipo oblea falsa 4">
+    </div>
+    <div class="meta">
+      <span class="price">Estilo 4</span>
+      <span class="code">Código: OFD 4</span>
+    </div>
+  </article>
+
+  <!-- Producto 5 -->
+  <article class="card">
+    <div class="img" role="img" aria-label="Cake topper tipo oblea falsa 5">
+      <img src="Oblea.jpeg" alt="Cake topper tipo oblea falsa 5">
+    </div>
+    <div class="meta">
+      <span class="price">Estilo 5</span>
+      <span class="code">Código: OFD 5</span>
+    </div>
+  </article>
+</div>
+
+<!-- 7) Mini cake topper (paquete de 10 pz, plastificado por la parte de atrás) -->
+<h3>Mini cake topper (paquete de 10 pz, plastificado por la parte de atrás)</h3>
+<div class="grid">
+  <!-- Producto 1 -->
+  <article class="card">
+    <div class="img" role="img" aria-label="Mini cake topper 1">
+      <img src="Pz.jpeg" alt="Mini cake topper 1">
+    </div>
+    <div class="meta">
+      <span class="price">Estilo 1</span>
+      <span class="code">Código: PE 3</span>
+    </div>
+  </article>
+
+  <!-- Producto 2 -->
+  <article class="card">
+    <div class="img" role="img" aria-label="Mini cake topper 2">
+      <img src="Pz2.jpeg" alt="Mini cake topper 2">
+    </div>
+    <div class="meta">
+      <span class="price">Estilo 2</span>
+      <span class="code">Código: PE 3</span>
+    </div>
+  </article>
+
+  <!-- Producto 3 -->
+  <article class="card">
+    <div class="img" role="img" aria-label="Mini cake topper 3">
+      <img src="Pz3.jpeg" alt="Mini cake topper 3">
+    </div>
+    <div class="meta">
+      <span class="price">Estilo 3</span>
+      <span class="code">Código: P# 1</span>
+    </div>
+  </article>
+
+  <!-- Producto 4 -->
+  <article class="card">
+    <div class="img" role="img" aria-label="Mini cake topper 4">
+      <img src="Pz4.jpeg" alt="Mini cake topper 4">
+    </div>
+    <div class="meta">
+      <span class="price">Estilo 4</span>
+      <span class="code">Código: P# 2</span>
+    </div>
+  </article>
+
+  <!-- Producto 5 -->
+  <article class="card">
+    <div class="img" role="img" aria-label="Mini cake topper 5">
+      <img src="Pz5.jpeg" alt="Mini cake topper 5">
+    </div>
+    <div class="meta">
+      <span class="price">Estilo 5</span>
+      <span class="code">Código: PND</span>
+    </div>
+  </article>
+
+  <!-- Producto 6 -->
+  <article class="card">
+    <div class="img" role="img" aria-label="Mini cake topper 6">
+      <img src="Pz12.jpeg" alt="Mini cake topper 6">
+    </div>
+    <div class="meta">
+      <span class="price">Estilo 6</span>
+      <span class="code">Código: PNN</span>
+    </div>
+  </article>
+
+  <!-- Producto 7 -->
+  <article class="card">
+    <div class="img" role="img" aria-label="Mini cake topper 7">
+      <img src="Pz7.jpeg" alt="Mini cake topper 7">
+    </div>
+    <div class="meta">
+      <span class="price">Estilo 7</span>
+      <span class="code">Código: PI 1</span>
+    </div>
+  </article>
+
+  <!-- Producto 8 -->
+  <article class="card">
+    <div class="img" role="img" aria-label="Mini cake topper 8">
+      <img src="Pz6.jpeg" alt="Mini cake topper 8">
+    </div>
+    <div class="meta">
+      <span class="price">Estilo 8</span>
+      <span class="code">Código: PI 2</span>
+    </div>
+  </article>
+
+  <!-- Producto 9 -->
+  <article class="card">
+    <div class="img" role="img" aria-label="Mini cake topper 9">
+      <img src="Pz9.jpeg" alt="Mini cake topper 9">
+    </div>
+    <div class="meta">
+      <span class="price">Estilo 9</span>
+      <span class="code">Código: PE 2</span>
+    </div>
+  </article>
+
+  <!-- Producto 10 -->
+  <article class="card">
+    <div class="img" role="img" aria-label="Mini cake topper 10">
+      <img src="Pz8.jpeg" alt="Mini cake topper 10">
+    </div>
+    <div class="meta">
+      <span class="price">Estilo 10</span>
+      <span class="code">Código: PAQ E1</span>
+    </div>
+  </article>
+
+  <!-- Producto 11 -->
+  <article class="card">
+    <div class="img" role="img" aria-label="Mini cake topper 11">
+      <img src="Pz11.jpeg" alt="Mini cake topper 11">
+    </div>
+    <div class="meta">
+      <span class="price">Estilo 11</span>
+      <span class="code">Código: GR 2</span>
+    </div>
+  </article>
+
+  <!-- Producto 12 -->
+  <article class="card">
+    <div class="img" role="img" aria-label="Mini cake topper 12">
+      <img src="Pz10.jpeg" alt="Mini cake topper 12">
+    </div>
+    <div class="meta">
+      <span class="price">Estilo 12</span>
+      <span class="code">Código: GV 1</span>
+    </div>
+  </article>
+</div>
+
+<!-- 8) Paquete de 15 pz de copos -->
+<h3>Paquete de 15 pz de copos</h3>
+<div class="grid">
+  <!-- Producto 1 -->
+  <article class="card">
+    <div class="img" role="img" aria-label="Paquete de 15 pz de copos 1">
+      <img src="Copos2.jpeg" alt="Paquete de 15 pz de copos 1">
+    </div>
+    <div class="meta">
+      <span class="price">Estilo 1</span>
+      <span class="code">Código: C1</span>
+    </div>
+  </article>
+
+  <!-- Producto 2 -->
+  <article class="card">
+    <div class="img" role="img" aria-label="Paquete de 15 pz de copos 2">
+      <img src="Copos3.jpeg" alt="Paquete de 15 pz de copos 2">
+    </div>
+    <div class="meta">
+      <span class="price">Estilo 2</span>
+      <span class="code">Código: C2</span>
+    </div>
+  </article>
+
+  <!-- Producto 3 -->
+  <article class="card">
+    <div class="img" role="img" aria-label="Paquete de 15 pz de copos 3">
+      <img src="Copos.jpeg" alt="Paquete de 15 pz de copos 3">
+    </div>
+    <div class="meta">
+      <span class="price">Estilo 3</span>
+      <span class="code">Código: C3</span>
+    </div>
+  </article>
+</div>
+
+<!-- 9) Paquete de figuras navideñas para cupcakes (impresión y metálicos) -->
+<h3>Paquete de figuras navideñas para cupcakes (impresión y metálicos)</h3>
+<div class="grid">
+  <!-- Producto 1 -->
+  <article class="card">
+    <div class="img" role="img" aria-label="Paquete de figuras navideñas para cupcakes 1">
+      <img src="Cupcakes.jpeg" alt="Paquete de figuras navideñas para cupcakes 1">
+    </div>
+    <div class="meta">
+      <span class="price">Estilo 1</span>
+      <span class="code">Código: C4</span>
+    </div>
+  </article>
+
+  <!-- Producto 2 -->
+  <article class="card">
+    <div class="img" role="img" aria-label="Paquete de figuras navideñas para cupcakes 2">
+      <img src="Cupcakes2.jpeg" alt="Paquete de figuras navideñas para cupcakes 2">
+    </div>
+    <div class="meta">
+      <span class="price">Estilo 2</span>
+      <span class="code">Código: C5</span>
+    </div>
+  </article>
+
+  <!-- Producto 3 -->
+  <article class="card">
+    <div class="img" role="img" aria-label="Paquete de figuras navideñas para cupcakes 3">
+      <img src="Cupcakes4.jpeg" alt="Paquete de figuras navideñas para cupcakes 3">
+    </div>
+    <div class="meta">
+      <span class="price">Estilo 3</span>
+      <span class="code">Código: C6</span>
+    </div>
+  </article>
+
+  <!-- Producto 4 -->
+  <article class="card">
+    <div class="img" role="img" aria-label="Paquete de figuras navideñas para cupcakes 4">
+      <img src="Cupcakes3.jpeg" alt="Paquete de figuras navideñas para cupcakes 4">
+    </div>
+    <div class="meta">
+      <span class="price">Estilo 4</span>
+      <span class="code">Código: C7</span>
+    </div>
+  </article>
+</div>
+
+    </div>
+  </section>
+
+
+
+  <!-- ====== NOSOTROS / PIE ====== -->
+<section id="nosotros" class="nosotros" aria-labelledby="titulo-nosotros">
+  <div class="snow"></div>  <!-- ❄️ Copos aquí -->
+  
+  <div class="container">
+    <h2 id="titulo-nosotros">Nosotros</h2>
+    <p style="text-align:center;max-width:800px;margin:0 auto">
+      Somos <strong>Paraiso de papel</strong> en Tampico, Tamaulipas.
+      Papelería creativa y <strong>decoración para pastel</strong> y fiestas.
+      Trabajamos por encargo y cuidamos cada detalle.
+    </p>
+  </div>
+</section>
+
+
+
+  <footer>
+<div>
+📍 Envíos locales | 
+<a href="https://wa.me/528331008211" target="_blank" rel="noopener noreferrer">
+  📞 WhatsApp
+</div>
+</a> | 
+
+
+  <a href="https://www.instagram.com/paraiso_2019_depapel?fbclid=IwY2xjawOC2v1leHRuA2FlbQIxMABicmlkETFwbjdtbHJCaHJVcHd6MzlHc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHnSZVdAyl0D6C00bYch_0yRlXw1uyrWm175Ary9CD4duGWMb_mHTtDYttkqO_aem_zWKPGVF8W4FJB0Q7Gkkxmw" 
+     rel="noopener noreferrer">
+    Instagram | 
+</div>
+  </a>
+
+  <a href="https://www.facebook.com/paraisode.papel.5895?locale=es_LA" 
+     target="_blank" 
+     rel="noopener noreferrer">
+    Facebook
+  </a>
+</div>
+
+
+      <div class="small">© <span id="anio"></span> Paraiso de papel — Todos los derechos reservados.</div>
+    </div>
+
+
+  </footer>
+
+  <script>
+    document.getElementById('anio').textContent = new Date().getFullYear();
+    // Rellenar automáticamente el campo "Código o producto" al pulsar una tarjeta
+    document.querySelectorAll('[data-code]').forEach(function(btn){
+      btn.addEventListener('click', function(){
+        var code = this.getAttribute('data-code');
+        document.getElementById('codigo').value = code;
+        window.location.hash = '#pedidos';
+        document.getElementById('cantidad').focus();
+      });
+    });
+
+  </script>
+<script>
+  // Generar copos de nieve
+  const snowContainer = document.querySelector(".nosotros .snow");
+
+  for (let i = 0; i < 40; i++) {   // ❄️ cantidad de copos (puedes subirlo)
+    let flake = document.createElement("div");
+    flake.classList.add("flake");
+    flake.textContent = "❄️";
+
+    // Posición horizontal aleatoria
+    flake.style.left = Math.random() * 100 + "%";
+
+    // Tamaño aleatorio
+    let size = 1 + Math.random() * 2; 
+    flake.style.fontSize = size + "rem";
+
+    // Duración aleatoria
+    let duration = 4 + Math.random() * 6;
+    flake.style.animationDuration = duration + "s";
+
+    // Retraso aleatorio
+    flake.style.animationDelay = Math.random() * 5 + "s";
+
+    snowContainer.appendChild(flake);
+  }
+
+</script>
+
+<div class="modal-img" id="modalImg">
+  <span class="modal-close" id="closeModal">&times;</span>
+  <img id="modalPicture" src="">
+</div>
+
+<script>
+  // Modal para ver imágenes en grande
+  const modal = document.getElementById("modalImg");
+  const modalImg = document.getElementById("modalPicture");
+  const closeModal = document.getElementById("closeModal");
+
+  // Variable para guardar el nivel de zoom
+  let zoomLevel = 1;
+
+  // Activar clic en todas las imágenes del catálogo
+  document.querySelectorAll("#catalogo img").forEach(img => {
+    img.style.cursor = "pointer"; // mano al pasar
+    img.addEventListener("click", () => {
+      modalImg.src = img.src;
+      zoomLevel = 1;                           // reset zoom al abrir
+      modalImg.style.transform = "scale(1)";   // tamaño normal
+      modal.style.display = "flex";            // abre modal
+    });
+  });
+
+  // Cerrar al presionar la X
+  closeModal.addEventListener("click", () => {
+    modal.style.display = "none";
+  });
+
+  // Cerrar si se hace clic afuera de la imagen
+  modal.addEventListener("click", (e) => {
+    if (e.target === modal) {
+      modal.style.display = "none";
+    }
+  });
+
+  // 🖱️ Zoom con la rueda del mouse
+  modal.addEventListener("wheel", function(e) {
+    // Evitar que la página haga scroll mientras hacemos zoom
+    e.preventDefault();
+
+    // Si gira hacia abajo (deltaY > 0) alejamos, si hacia arriba acercamos
+    if (e.deltaY < 0) {
+      zoomLevel += 0.1;   // Acercar
+    } else {
+      zoomLevel -= 0.1;   // Alejar
+    }
+
+    // Limitar zoom entre 1x y 3x
+    if (zoomLevel < 1) zoomLevel = 1;
+    if (zoomLevel > 3) zoomLevel = 3;
+
+    modalImg.style.transform = "scale(" + zoomLevel + ")";
+  }, { passive: false });
+</script>
+
+
+<script>
+  const sparkleArea = document.querySelector('.sparkle-container');
+
+  function createSparkle() {
+    const sparkle = document.createElement('div');
+    sparkle.classList.add('sparkle');
+
+    // Puedes cambiar ⭐ por ✨ si quieres
+    sparkle.textContent = '✨';
+
+    // Posición aleatoria en toda la pantalla
+    sparkle.style.left = Math.random() * 100 + 'vw';
+    sparkle.style.top = Math.random() * 100 + 'vh';
+
+    // Tamaño aleatorio
+    const size = 12 + Math.random() * 20;
+    sparkle.style.fontSize = size + 'px';
+
+    sparkleArea.appendChild(sparkle);
+
+    // Eliminar después de la animación
+    setTimeout(() => sparkle.remove(), 1500);
+  }
+
+  // Crear un destello cada 120 ms
+  setInterval(createSparkle, 120);
+</script>
+
+<script>
+  const fwContainer = document.querySelector(".fireworks-container");
+
+  function createExplosion() {
+    const explosion = document.createElement("div");
+    explosion.classList.add("explosion");
+
+    // Posición aleatoria
+    explosion.style.left = Math.random() * 100 + "vw";
+    explosion.style.top = Math.random() * 100 + "vh";
+
+    fwContainer.appendChild(explosion);
+
+    // Número de chispas por explosión
+    const sparkCount = 12 + Math.floor(Math.random() * 8);
+
+    for (let i = 0; i < sparkCount; i++) {
+      const spark = document.createElement("div");
+      spark.classList.add("spark");
+
+      // Ángulo aleatorio
+      const angle = (Math.PI * 2 * i) / sparkCount;
+      const distance = 40 + Math.random() * 40;
+
+      spark.style.setProperty("--x", Math.cos(angle) * distance + "px");
+      spark.style.setProperty("--y", Math.sin(angle) * distance + "px");
+
+      explosion.appendChild(spark);
+    }
+
+    // Eliminar explosión después de animar
+    setTimeout(() => explosion.remove(), 900);
+  }
+
+  // Explosiones cada 400 ms
+  setInterval(createExplosion, 400);
+</script>
+
+</body>
+</html>
